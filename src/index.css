@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-gradient::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  margin-left: 20rem;
+}
+
+.scrollbar-gradient::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #888989, #4A4E54); /* Gradient background */
+  border-radius: 9999px; /* Fully rounded scrollbar */
+  border: none; /* Remove the border */
+}
+
+.scrollbar-gradient::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track */
+}
+
+.scrollbar-gradient::-webkit-scrollbar-button {
+  display: none; /* Hide the upper and lower triangle arrows */
+}
+
+.container-line{
+  position: relative;
+}
+.container-line::after{
+  background:white;
+  margin-top: 1rem ;
+  margin-left: 4rem ;
+  width: 612px;
+  border-radius: 0.75rem;
+  height: 4px;
+  content: "";
+  position: absolute;
+}
